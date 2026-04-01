@@ -6,11 +6,11 @@
 
 ### Supported Versions
 
-Currently, the `master` branch is the only branch actively receiving security updates.
+Currently, the `main` branch is the only branch actively receiving security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| master  | :white_check_mark: |
+| main    | :white_check_mark: |
 | others  | :x:                |
 
 ### Reporting a Vulnerability
@@ -33,11 +33,11 @@ We will review the report and respond to you as soon as possible to coordinate a
 
 ### Поддерживаемые версии
 
-В настоящее время обновления безопасности активно получает только ветка `master`.
+В настоящее время обновления безопасности активно получает только ветка `main`.
 
 | Версия  | Поддерживается     |
 | ------- | ------------------ |
-| master  | :white_check_mark: |
+| main    | :white_check_mark: |
 | другие  | :x:                |
 
 ### Сообщение об уязвимости
