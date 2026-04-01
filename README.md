@@ -1,68 +1,156 @@
-<div class="header" align="center">
-<img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg">
-</div>
-
-Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), our homegrown engine written in C#.
-
-This is the primary repo for Space Station 14. To prevent people forking RobustToolbox, a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server.
-
-If you want to host or create content for SS14, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
-
-## Links
+<p align="center">
+  <img alt="Space Station 14" width="600" src="Resources/Textures/Logo/logo.png" />
+</p>
 
 <div class="header" align="center">
 
-[Website](https://spacestation14.com/) | [Discord](https://discord.ss14.io/) | [Forum](https://forum.spacestation14.com/) | [Mastodon](https://mastodon.gamedev.place/@spacestation14) | [Patreon](https://www.patreon.com/spacestation14) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.com/about/nightlies/)
+[![Discord](https://img.shields.io/discord/1243455873989349448?style=for-the-badge&logo=discord&logoColor=white&label=Discord&color=%237289da)](https://discord.gg/3WhQNFZfWc)
+[![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge)](https://dotnet.microsoft.com/)
+[![Steam](https://img.shields.io/badge/Steam-SS14-1b2838?style=for-the-badge&logo=steam&logoColor=white)](https://store.steampowered.com/app/1255460/Space_Station_14/)
+[![Client](https://img.shields.io/badge/Client-Download-0078D7?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAxNmwtNS01aDMuNVY0aDNWMTFIMTd6TTUgMTh2Mmgxdjh6Ii8+PC9zdmc+)](https://spacestation14.io/about/nightlies/)
+[![GitHub Stars](https://img.shields.io/github/stars/ss14-art/space-station-14?style=for-the-badge&logo=github&logoColor=white&color=181717)](https://github.com/ss14-art/WH14K)
+
+# Space Station 14
+
+![Commit Activity](https://img.shields.io/github/commit-activity/y/ss14-art/space-station-14?style=for-the-badge&logo=github&logoColor=white&color=181717)
+![Issues](https://img.shields.io/github/issues/ss14-art/space-station-14?style=for-the-badge&logo=github&logoColor=white&color=181717)
+![Closed PRs](https://img.shields.io/github/issues-pr-closed/ss14-art/space-station-14?style=for-the-badge&logo=github&logoColor=white&color=181717)
 
 </div>
 
-## Documentation/Wiki
+---
 
-Our [docs site](https://docs.spacestation14.com/) has documentation on SS14's content, engine, game design, and more.
-Additionally, see these resources for license and attribution information:
-- [Robust Generic Attribution](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)
-- [Robust Station Image](https://docs.spacestation14.com/en/specifications/robust-station-image.html)
+## 🇷🇺 О проекте / 🇬🇧 About the project
 
-We also have lots of resources for new contributors to the project.
+**🇷🇺 Русский**
+**Open Space** — это проект с открытым исходным кодом (форк проекта STARLIGHT), нацеленный на создание уникальных механик и приятной игровой атмосферы в игре Space Station 14.
+Это игра о выживании на космической станции, где происходят постоянные столкновения между экипажем и антагонистами, стремящимися помешать персоналу достичь своих целей.
 
-## Contributing
+**🇬🇧 English**
+**Open Space** is an open-source project (a fork of the STARLIGHT project) aimed at creating unique mechanics and a pleasant game atmosphere in Space Station 14.
+It is a game about survival on a space station featuring constant confrontations between the crew and antagonists designed to prevent the crew from achieving their goals.
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/space-wizards/space-station-14-content/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
-Just make sure your changes and pull requests are in accordance with the [contribution guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
+---
 
-We are not currently accepting translations of the game on our main repository. If you would like to translate the game into another language, consider creating a fork or contributing to a fork.
+## 📚 Документация / Documentation
 
-## AI-generated contributions disclaimer
-This project does not accept low-effort or wholesale AI-generated contributions. Examples include, but are not limited to:
+**🇷🇺** У Space Station 14 есть [сайт с документацией](https://docs.spacestation14.io/) по контенту, движку, геймдизайну и многому другому. Мы также предоставляем множество ресурсов для новых разработчиков.
 
-- Any code (including yaml) generated by tools like GitHub Copilot, ChatGPT, or similar.
-- AI-created artwork, sound files, or other assets.
-- Auto-generated documentation, issue reports or pull request descriptions.
+**🇬🇧** Space Station 14 has a [docs site](https://docs.spacestation14.io/) containing documentation on SS14's content, engine, game design, and more. We also have lots of resources for new contributors to the project.
 
-Exceptions to this are simple tools like Rider's single-line completion feature.
+---
 
-## Building
+## 🚀 Запуск сборки локально / Building Locally
 
-1. Clone this repo:
-```shell
-git clone https://github.com/space-wizards/space-station-14.git
-```
-2. Go to the project folder and run `RUN_THIS.py` to initialize the submodules and load the engine:
-```shell
+### Требования / Requirements
+
+- **Git** — [скачать / download](https://git-scm.com/downloads)
+- **.NET SDK 10.0 или выше / or higher** — [скачать / download](https://dotnet.microsoft.com/download/dotnet/10.0)
+
+### 🍃 Windows
+```bat
+# 1. Клонируйте репозиторий
+git clone https://github.com/ss14-art/space-station-14.git
 cd space-station-14
-python RUN_THIS.py
+
+# 2. Загрузите движок
+git submodule update --init --recursive
+
+# 3. Запустите сервер
+runserver.bat
+
+# 4. Запустите клиент (в отдельном окне)
+runclient.bat
 ```
-3. Compile the solution:
 
-Build the server using `dotnet build`.
+**Готово!** Подключитесь к **localhost** в клиенте и играйте.
 
-[More detailed instructions on building the project.](https://docs.spacestation14.com/en/general-development/setup.html)
+> Для Release-сборки используйте `runserver-Release.bat` и `runclient-Release.bat`
 
-## License
+### 🐧 Linux / macOS
+```sh
+# 1. Клонируйте репозиторий
+git clone https://github.com/ss14-art/space-station-14.git
+cd space-station-14
 
-Existing source code in this repository is licensed under the [MIT license](./LICENSE.TXT).
+# 2. Загрузите движок
+git submodule update --init --recursive
 
-Assets keep their own declared licensing in metadata (`meta.json`) and source attribution records. Most are CC-family licenses (for example, CC-BY-SA 3.0/4.0), unless explicitly stated otherwise.
+# 3. Запустите сервер
+chmod +x runserver.sh
+./runserver.sh
 
-> [!NOTE]
-> Some assets are licensed under the non-commercial [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) or similar non-commercial licenses and will need to be removed if you wish to use this project commercially.
+# 4. Запустите клиент (в отдельном терминале)
+chmod +x runclient.sh
+./runclient.sh
+```
+
+**Готово!** Подключитесь к **localhost** в клиенте и играйте.
+
+> Для Release-сборки используйте `runserver-Release.sh` и `runclient-Release.sh`
+
+---
+
+## 🛠 Участие в разработке / Community & Contributing
+
+**🇷🇺** Мы рады любой помощи в развитии проекта! Пожалуйста, ознакомьтесь с нашими правилами перед тем, как предлагать свои изменения.
+**🇬🇧** We welcome any help in developing the project! Please read our guidelines before submitting your changes.
+
+* 📖 [**Как внести вклад (Contributing)**](CONTRIBUTING.md) — Правила создания Pull Request'ов и требования к коду.
+* ⚖️ [**Кодекс поведения (Code of Conduct)**](CODE_OF_CONDUCT.md) — Правила общения в нашем сообществе.
+* 🛡️ [**Политика безопасности (Security Policy)**](SECURITY.md) — Как сообщить о критических уязвимостях и эксплойтах.
+
+---
+
+## ⚖️ Лицензия / License
+
+> [!CAUTION]
+> **🇷🇺 ВНИМАНИЕ:** Код репозитория имеет комбинированное лицензирование. Оригинальный код Space Wizards Federation лицензирован под MIT. Наши собственные разработки и изменения подчиняются Пользовательской лицензии (Project License) и требуют подписания CLA.
+> 
+> **🇬🇧 CAUTION:** The repository code is under a combined license model. The original Space Wizards Federation code is licensed under MIT. Our custom additions and changes are governed by the Project License and require signing a CLA.
+
+### Нажмите на раздел для подробностей / Click each section for further information
+
+<details>
+<summary><b> Project License </b></summary>
+<br>
+
+![Project License](https://img.shields.io/badge/License-Project_License-blue?style=for-the-badge)
+
+> **🇷🇺** Все изменения после коммита `2c959c3b40a18720d6690270aeb4b932631bb911` регулируются условиями [LICENSE.TXT](LICENSE.TXT). Коммерческое использование и несанкционированный публичный хостинг запрещены.
+> 
+> **🇬🇧** All changes after commit `2c959c3b40a18720d6690270aeb4b932631bb911` are governed by the terms in [LICENSE.TXT](LICENSE.TXT). Commercial use and unauthorized public hosting are prohibited.
+</details>
+
+<details>
+<summary><b> CLA </b></summary>
+<br>
+
+![CLA](https://img.shields.io/badge/Agreement-CLA-orange?style=for-the-badge)
+
+> **🇷🇺** Лицензионное соглашение контрибьютора. Создавая Pull Request в этот репозиторий, вы автоматически соглашаетесь с условиями передачи кода организации ss14-art, описанными в [CLA.TXT](CLA.TXT).
+> 
+> **🇬🇧** Contributor License Agreement. By submitting a Pull Request to this repository, you automatically agree to the terms of transferring code to the ss14-art organization, as described in [CLA.TXT](CLA.TXT).
+</details>
+
+<details>
+<summary><b> MIT License </b></summary>
+<br>
+
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+> **🇷🇺** Оригинальный код Space Wizards Federation, а также вся история коммитов до `2c959c3b40a18720d6690270aeb4b932631bb911` распространяются на условиях [MIT License](MIT.TXT).
+> 
+> **🇬🇧** The original Space Wizards Federation code, as well as all commit history prior to `2c959c3b40a18720d6690270aeb4b932631bb911`, are distributed under the terms of the [MIT License](MIT.TXT).
+</details>
+
+<details>
+<summary><b> CC 3.0 BY-SA </b></summary>
+<br>
+
+![Creative Commons 3.0 BY-SA](https://img.shields.io/badge/License-CC_3.0_BY--SA-lightblue?style=for-the-badge)
+
+> **🇷🇺** Все остальные ресурсы (Assets), не относящиеся к коду, включая иконки и звуковые файлы, лицензированы по лицензии [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/), если иное не указано в папке или файле.
+> 
+> **🇬🇧** All other non-code Assets, including icons and sound files, are licensed under the [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) license unless otherwise noted in the folder or file.
+</details>
